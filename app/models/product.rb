@@ -1,6 +1,6 @@
 class Product < ActiveRecord::Base
 	
-	validates :description, :name, presence: true
+	validates :description, :name, :url, presence: true
 	validates :price, numericality: {only_integer: true}
 	
 	has_many :reviews

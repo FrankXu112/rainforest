@@ -12,9 +12,8 @@ class ProductsController < ApplicationController
 	def create
 		@product = Product.new(product_params)
 		if @product.save
-			redirect_to "/"
+			redirect_to product_path(@product)
 		else
-			# binding.pry
 			render :new
 		end
 	end
@@ -34,7 +33,7 @@ class ProductsController < ApplicationController
 	def update
 		@product = Product.find(params[:id])
 		if @product.update_attributes(product_params)
-			redirect_to "/products/#{@product.id}"
+			redirect_to product_path(@product)
 		else
 			render :edit
 		end
@@ -43,12 +42,12 @@ class ProductsController < ApplicationController
 	def destroy
 		@product = Product.find(params[:id])
 		@product.destroy
-		redirect_to "/products"
+		redirect_to products_path
 	end
 
   private
   def product_params
-  	params.require(:product).permit(:name, :description, :price)
+  	params.require(:product).permit(:name, :description, :price, :url)
   end
 
 end

@@ -32,8 +32,8 @@
     </div>
   </div>
   <%= f.select(:category_id) do %>
-    <%= Category.category_names.each do |c| %>
-    <%= content_tag(:option, c.first, value: c.last) %>
+    <%= Category.all.each do |c| %>
+    <%= content_tag(:option, c.name, value: c.id) %>
     <% end %>
   <% end %>
   <div class="form-group">

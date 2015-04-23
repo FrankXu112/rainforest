@@ -1,3 +1,5 @@
+
+
 body {
 	background: url(http://thewallpaperhd.com/wp-content/uploads/2013/03/earth-desktop-background.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -12,7 +14,12 @@ body {
 //   -moz-background-size: cover;
 //   -o-background-size: cover;
 //   background-size: cover;
-// } 
+// }
+
+.container {
+	padding-top: 60px;
+}
+
 .navbar{
 	position: fixed;
   width: 100%;
@@ -28,6 +35,13 @@ h1{
 	text-align: center;
 }
 
+
+h1.home_page{
+	font-family: Francois One, serif;
+	font-size: 50px;
+	color: white;
+}
+
 img{
 	height: 300px;
   width: 500px;
@@ -36,9 +50,18 @@ img{
 }
 
 section.show{
-	font-size: 40;
+	font-size: 30px;
+	color: white;
+}
+
+section.review{
+	font-size: 20px;
+	color: white;
 }
 
 ul.index{
-	font-size: 40;
+	font-size: 40px;
+	color: white
 }
+
+

@@ -4,4 +4,9 @@
 # Examples:
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+#   Mayor.create(name: 'Emanuel', city: cities.first
+Category.create(:name => "")
+Category.create(:name => "Weapon")
+Category.create(:name => "food")
+Category.create(:name => "drink")
+Category.create(:name => "furniture")

@@ -1,13 +1,11 @@
-<h1 class="home_page">All Products</h1>	
+<div class="font-effect-fire-animation">
+	<h1>Top 10 Products</h1>		
 
-
-<ul class="index">
+<ol class="index">
 	<% @products.each do |product| %>
 	  <li><%= link_to "#{product.name}-#{product.formatted_price}", product_path(product) %><span class="label label-default"><%= product.category.name %></span>
   			<%= image_tag product.url %>
-  			<% if product.category %>
-        
-  		  <% end %>
 	  </li>
 	<% end %>
-</ul>	
+</ol>	
+</div>

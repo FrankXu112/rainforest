@@ -42,6 +42,10 @@ h1.home_page{
 	color: white;
 }
 
+h3{
+	color: white;
+}
+
 img{
 	height: 300px;
   width: 500px;
@@ -56,10 +60,15 @@ section.show{
 
 section.review{
 	font-size: 20px;
-	color: white;
 }
 
-ul.index{
+section.footer{
+	color: white;
+	font-size: 20px;
+
+}
+
+ol.index{
 	font-size: 40px;
 	color: white
 }
